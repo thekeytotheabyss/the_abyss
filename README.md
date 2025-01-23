@@ -27,3 +27,26 @@ By distributing this encrypted document, the repository seeks to:
    Use the following command to clone the repository locally:  
    ```bash
    git clone https://github.com/sorSsmyrna/the_abyss.git
+
+
+2. Access the Encrypted Document:
+Download the encrypted file (the_abyss.md) from this repository.
+The document contains vital evidence about the planned operation and its catastrophic impact.
+
+
+3. Decryption Process:
+When the key and passphrase are released, a file named the_key.md will be added to the repository. This file will include the decryption key, passphrase, and basic step-by-step instructions for decrypting the document.
+
+
+4. Share This Repository:
+Share this repository's URL widely with trusted individuals, organizations, and networks who are prepared to act once the document is decrypted.
+For example, you can share the repository using this link:
+
+https://github.com/sorSsmyrna/the_abyss
+
+
+5. Share the Document:
+
+Before the operation: Distribute the encrypted document as widely as possible, ensuring it reaches individuals and organizations capable of acting.
+
+After the operation: Once decrypted, share the document widely to expose the truth, counter the false narrative, and coordinate aid delivery.
