@@ -2,9 +2,6 @@ name: Create Release with Encrypted Document
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*' # Trigger on version tags like v1.0, v2.1, etc.
 
 jobs:
   create-release:
@@ -20,7 +17,7 @@ jobs:
     - name: Rename the file
       run: |
         if [ -f "the_abyss.asc" ]; then
-          cp the_abyss.asc EncryptedDocument.txt
+          cp the_abyss.md EncryptedDocument.txt
         else
           echo "File the_abyss.asc not found"
           exit 1
