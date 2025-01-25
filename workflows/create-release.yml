@@ -1,0 +1,39 @@
+name: Create Release with Encrypted Document
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*' # Trigger on version tags like v1.0, v2.1, etc.
+
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Rename the file
+    - name: Rename the file
+      run: |
+        if [ -f "the_abyss.asc" ]; then
+          cp the_abyss.asc EncryptedDocument.txt
+        else
+          echo "File the_abyss.asc not found"
+          exit 1
+        fi
+
+    # Step 3: Create the release and upload the renamed file
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref_name }}
+        release_name: Release ${{ github.ref_name }}
+        draft: false
+        prerelease: false
+        files: EncryptedDocument.txt
