@@ -16,10 +16,10 @@ jobs:
     # Step 2: Rename the file
     - name: Rename the file
       run: |
-        if [ -f "the_abyss.asc" ]; then
+        if [ -f "the_abyss.md" ]; then
           cp the_abyss.md EncryptedDocument.txt
         else
-          echo "File the_abyss.asc not found"
+          echo "File the_abyss.md not found"
           exit 1
         fi
 
