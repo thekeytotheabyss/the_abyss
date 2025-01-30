@@ -1,3 +1,5 @@
+Not familiar with git or GitHub? Visit https://sorSsmyrna.github.io/thekeytotheabyss/
+---
 # **the_abyss: Exposing the False Flag and Ensuring Aid for the Trapped**
 
 ## **Overview**
